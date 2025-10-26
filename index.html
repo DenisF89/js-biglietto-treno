@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Biglietto Treno</title>
+    <style>
+        a{color:white;font-size: 30px; font-weight: 800; text-decoration:none; 
+          padding:20px; border:2px solid blue; background-color:rgb(31, 119, 227);
+         }
+        button{
+            font-size: 30px; font-weight: 800; 
+            padding:20px; border:2px solid blue; 
+            
+        }
+        .row{display:flex;margin:20px;}
+        .red{border-color: rgb(255, 0, 0); }
+    </style>
 </head>
 <body>
 
@@ -30,8 +42,8 @@
                 potete stampare il risultato tramite un alert o in console
             </li>
         </ul>
-        <span class="color:red">Bonus: </span>scrivete il risultato in un elemento in pagina (es. un tag &lt;div&gt;)
-    </h3>
+        <div><span style="color: red;">Bonus: </span>scrivete il risultato in un elemento in pagina (es. un tag &lt;div&gt;)
+    </div>
 
 <!--     Consigli:
 Ricordatevi di lavorare un passo alla volta. Partite con l'approccio "intro-svolgimento-conclusione" che vi ho mostrato, scrivendo dei commenti segnaposto.
@@ -39,11 +51,20 @@ Non vi sarà chiaro subito cosa fare e in alcuni casi non saprete come realizzar
 Potete procedere stampando in console.log man mano che accadono eventi, per verificare cosa succede (es. calcolo il prezzo e lo stampo. calcolo lo sconto e lo stampo. applico lo sconto e stampo il nuovo prezzo)
 Fate attenzione a NON creare variabili all'interno di un if. Createle prima e nell'if assegnate un valore, come visto in live coding.
 Per verificare che la vostra logica sui prezzi funzioni correttamente, provate a verificare quanto segue: -->
-100km, 10 anni => prezzo corretto:  €16.80<br>
-100m, 30 anni => prezzo corretto: €21.00<br>
-100km, 70 anni => prezzo corretto: €12.60
+<div style="margin-top:20px;">Controllo:
+<ol>
+    <li>100km, 10 anni => prezzo corretto:  €16.80</li>
+    <li>100km, 30 anni => prezzo corretto: €21.00</li>
+    <li>100km, 70 anni => prezzo corretto: €12.60</li>
+</ol>
+</div>
 
-<h2><div id="result"></div></h2>
+</h3>
+
+<div class="row">
+    <div id="result"></div> 
+    <a href="">Ricarica</a>
+</div>
 
 <script type="text/javascript" src="code.js"></script>
 </body>
